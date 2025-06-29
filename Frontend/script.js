@@ -1,5 +1,5 @@
 // API Configuration
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'https://la-concierge-backend.onrender.com';
 
 // DOM Elements
 const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
