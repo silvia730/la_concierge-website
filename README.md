@@ -32,10 +32,10 @@ la concierge website/
 ## Database Configuration
 
 **Your MySQL Credentials:**
-- Host: localhost
-- Port: 3306
-- Username: root
-- Password: #07silvia,njeri
+- Host: 
+- Port:
+- Username: 
+- Password: 
 - Database: le_concierge
 
 ## Quick Setup (Windows)
@@ -160,8 +160,8 @@ The system will automatically create these tables:
 ### Common Issues:
 
 1. **MySQL Connection Error:**
-   - Ensure MySQL is running on localhost:3306
-   - Verify credentials: root / #07silvia,njeri
+   - Ensure MySQL is running on localhost
+   - Verify credentials:your password
 
 2. **Port Already in Use:**
    - Change port in `app.py` line: `app.run(debug=True, host='0.0.0.0', port=5001)`
