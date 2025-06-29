@@ -1,4 +1,4 @@
-# Le Concierge - Luxury Lifestyle Concierge Service
+g# Le Concierge - Luxury Lifestyle Concierge Service
 
 A premium concierge service website with PayPal integration for consultation bookings.
 
@@ -74,10 +74,10 @@ If you prefer to set up the database manually in MySQL Workbench:
 
 1. **Open MySQL Workbench**
 2. **Connect to your MySQL server:**
-   - Host: localhost
-   - Port: 3306
-   - Username: root
-   - Password: #07silvia,njeri
+   - Host: 
+   - Port:
+   - Username: 
+   - Password:
 
 3. **Create the database:**
    ```sql
