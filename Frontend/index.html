@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Concierge | Effortless Living. Expertly Delivered.</title>
+    <meta name="description" content="Kenya's premier lifestyle concierge service for relocation, luxury living, and VIP experiences">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- PayPal SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=Ae4Ffb7ogDVVb4ZbVpouoCPOB5-jZ0QU0ODza3poXpNqIpkcCoV78lI6MHvYDNDXpGyL9hnTZSkmsDyY&currency=USD"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Le Concierge Logo" class="logo-img">
+                <h1>Le <span>Concierge</span></h1>
+            </a>
+            
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="auth-buttons">
+                <button class="btn btn-outline" id="loginBtn">Login</button>
+                <button class="btn btn-primary" id="signupBtn">Sign Up</button>
+            </div>
+            
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Welcome to Kenya's Premier Lifestyle Concierge Service</h2>
+                <p>From relocation to luxury living, Le Concierge handles everything—so you don't have to worry.</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">Explore Our Services</a>
+                    <a href="#" class="btn btn-outline" id="consultationHeroBtn">Get Started for $80</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Le Concierge -->
+    <section class="why-section">
+        <div class="why-background"></div>
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Le Concierge?</h2>
+                <p>We specialize in making your transition to Kenya seamless. Whether you're relocating, investing, or simply indulging in the good life, Le Concierge provides unmatched support from the moment you land.</p>
+            </div>
+            
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe-africa"></i>
+                    </div>
+                    <h3>Tailored services for foreigners settling in Kenya</h3>
+                    <p>Customized services for international clients settling in Kenya</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Save time, skip the hassle</h3>
+                    <p>Eliminate hassles and save valuable time with our expert assistance</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Luxury experiences curated by local experts</h3>
+                    <p>Curated premium experiences by local experts</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Discreet, reliable, and always available</h3>
+                    <p>Professional service with the utmost discretion and reliability</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Signature Services</h2>
+                <p>Premium services tailored to your needs</p>
+            </div>
+            
+            <div class="service-categories">
+                <button class="category-btn active" data-category="all">All Services</button>
+                <button class="category-btn" data-category="relocation">Relocation</button>
+                <button class="category-btn" data-category="real-estate">Real Estate</button>
+                <button class="category-btn" data-category="transport">Transport</button>
+                <button class="category-btn" data-category="lifestyle">Lifestyle</button>
+                <button class="category-btn" data-category="corporate">Corporate</button>
+            </div>
+            
+            <div class="service-grid">
+                <!-- Immigration & Relocation -->
+                <div class="service-card" data-category="relocation">
+                    <div class="service-img" style="background-image: url('https://images.pexels.com/photos/1438761/pexels-photo-1438761.jpeg?w=600&h=400&fit=crop');"></div>
+                    <div class="service-content">
+                        <h3>Immigration & Relocation</h3>
+                        <p>Comprehensive support for your move to Kenya</p>
+                        <div class="service-price">
+                            <a href="#" class="btn btn-outline consultation-btn">Learn More</a>
+                            <span class="price">$80</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Real Estate Solutions -->
+                <div class="service-card" data-category="real-estate">
+                    <div class="service-img" style="background-image: url('https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?w=800&h=500&fit=crop');"></div>
+                    <div class="service-content">
+                        <h3>Real Estate Solutions</h3>
+                        <p>Short & long-term rentals with premium options</p>
+                        <div class="service-price">
+                            <a href="#" class="btn btn-outline consultation-btn">Learn More</a>
+                            <span class="price">$80</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- VIP Transport -->
+                <div class="service-card" data-category="transport">
+                    <div class="service-img" style="background-image: url('https://images.pexels.com/photos/358319/pexels-photo-358319.jpeg?w=800&h=500&fit=crop');"></div>
+                    <div class="service-content">
+                        <h3>VIP Transport</h3>
+                        <p>Private jets, helicopters, and chauffeured services</p>
+                        <div class="service-price">
+                            <a href="#" class="btn btn-outline consultation-btn">Learn More</a>
+                            <span class="price">$80</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Personal Shopping & Errands -->
+                <div class="service-card" data-category="lifestyle">
+                    <div class="service-img" style="background-image: url('https://images.pexels.com/photos/1666067/pexels-photo-1666067.jpeg?w=600&h=400&fit=crop');"></div>
+                    <div class="service-content">
+                        <h3>Personal Shopping & Errands</h3>
+                        <p>Errand running, grocery delivery, home maintenance scheduling, personal shopping services.</p>
+                        <div class="service-price">
+                            <a href="#" class="btn btn-outline consultation-btn">Learn More</a>
+                            <span class="price">$80</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Healthcare Navigation & Insurance -->
+                <div class="service-card" data-category="lifestyle">
+                    <div class="service-img" style="background-image: url('https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg?w=600&h=400&fit=crop');"></div>
+                    <div class="service-content">
+                        <h3>Healthcare Navigation & Insurance</h3>
+                        <p>Medical & insurance assistance, healthcare navigation, wellness programs, spa & fitness appointments.</p>
+                        <div class="service-price">
+                            <a href="#" class="btn btn-outline consultation-btn">Learn More</a>
+                            <span class="price">$80</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- International School Placement -->
+                <div class="service-card" data-category="lifestyle">
+                    <div class="service-img" style="background-image: url('https://images.pexels.com/photos/256395/pexels-photo-256395.jpeg?w=600&h=400&fit=crop');"></div>
+                    <div class="service-content">
+                        <h3>International School Placement</h3>
+                        <p>International school admissions, educational consulting, school tours and enrollment assistance.</p>
+                        <div class="service-price">
+                            <a href="#" class="btn btn-outline consultation-btn">Learn More</a>
+                            <span class="price">$80</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Private Dining & Reservations -->
+                <div class="service-card" data-category="lifestyle">
+                    <div class="service-img" style="background-image: url('https://images.pexels.com/photos/262047/pexels-photo-262047.jpeg?w=600&h=400&fit=crop');"></div>
+                    <div class="service-content">
+                        <h3>Private Dining & Reservations</h3>
+                        <p>VIP restaurant bookings, private chefs, exclusive dining experiences, event planning & hosting.</p>
+                        <div class="service-price">
+                            <a href="#" class="btn btn-outline consultation-btn">Learn More</a>
+                            <span class="price">$80</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Wellness & Personal Trainers -->
+                <div class="service-card" data-category="lifestyle">
+                    <div class="service-img" style="background-image: url('https://images.pexels.com/photos/3822622/pexels-photo-3822622.jpeg?w=600&h=400&fit=crop');"></div>
+                    <div class="service-content">
+                        <h3>Wellness & Personal Trainers</h3>
+                        <p>Fitness trainers & wellness programs, spa appointments, personal wellness planning.</p>
+                        <div class="service-price">
+                            <a href="#" class="btn btn-outline consultation-btn">Learn More</a>
+                            <span class="price">$80</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Travel & Safari Planning -->
+                <div class="service-card" data-category="lifestyle">
+                    <div class="service-img" style="background-image: url('https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?w=600&h=400&fit=crop');"></div>
+                    <div class="service-content">
+                        <h3>Travel & Safari Planning</h3>
+                        <p>Safari bookings & tours, travel planning, cultural experiences, exclusive access to attractions.</p>
+                        <div class="service-price">
+                            <a href="#" class="btn btn-outline consultation-btn">Learn More</a>
+                            <span class="price">$80</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Event Management -->
+                <div class="service-card" data-category="lifestyle">
+                    <div class="service-img" style="background-image: url('https://images.pexels.com/photos/3184194/pexels-photo-3184194.jpeg?w=600&h=400&fit=crop');"></div>
+                    <div class="service-content">
+                        <h3>Event Management</h3>
+                        <p>From intimate dinners to grand galas, corporate events, private parties, and special celebrations.</p>
+                        <div class="service-price">
+                            <a href="#" class="btn btn-outline consultation-btn">Learn More</a>
+                            <span class="price">$80</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Corporate Concierge -->
+                <div class="service-card" data-category="corporate">
+                    <div class="service-img" style="background-image: url('https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?w=800&h=500&fit=crop');"></div>
+                    <div class="service-content">
+                        <h3>Corporate Concierge</h3>
+                        <p>Relocation for staff, executive support, meeting & event coordination, temporary housing for visitors.</p>
+                        <div class="service-price">
+                            <a href="#" class="btn btn-outline consultation-btn">Learn More</a>
+                            <span class="price">$80</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Special Services (Cultural Experiences) -->
+                <div class="service-card" data-category="lifestyle">
+                    <div class="service-img" style="background-image: url('https://images.pexels.com/photos/221436/pexels-photo-221436.jpeg?w=600&h=400&fit=crop');"></div>
+                    <div class="service-content">
+                        <h3>Cultural Experiences</h3>
+                        <p>Private tours with local experts</p>
+                        <div class="service-price">
+                            <a href="#" class="btn btn-outline consultation-btn">Learn More</a>
+                            <span class="price">$80</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="consultation-cta">
+                <h3>Consultation First, Always</h3>
+                <p>To ensure quality and alignment, access to our services begins with a $80 consultation fee. This grants you direct contact with a lifestyle expert who will guide you through what's possible.</p>
+                <a href="#" class="btn btn-primary" id="consultationServicesBtn">Request a Consultation - $80</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lifestyle Gallery -->
+    <section class="lifestyle-gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>The Le Concierge Lifestyle</h2>
+                <p>Experience Kenya in unparalleled luxury</p>
+            </div>
+            
+            <div class="lifestyle-gallery">
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?w=600&h=400&fit=crop" alt="Luxury Safari Experience" loading="lazy">
+                    <div class="gallery-caption">
+                        <h4>Luxury Safari Experience</h4>
+                        <p>Private game drives in luxury vehicles</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?w=600&h=400&fit=crop" alt="VIP Beach Retreat" loading="lazy">
+                    <div class="gallery-caption">
+                        <h4>VIP Beach Retreat</h4>
+                        <p>Private beachfront villas with staff</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/262047/pexels-photo-262047.jpeg?w=600&h=400&fit=crop" alt="Gourmet Dining" loading="lazy">
+                    <div class="gallery-caption">
+                        <h4>Gourmet Dining</h4>
+                        <p>Michelin-star chefs at your residence</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/3822622/pexels-photo-3822622.jpeg?w=600&h=400&fit=crop" alt="Wellness Retreat" loading="lazy">
+                    <div class="gallery-caption">
+                        <h4>Wellness Retreat</h4>
+                        <p>Private spa and fitness facilities</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/221436/pexels-photo-221436.jpeg?w=600&h=400&fit=crop" alt="Cultural Experiences" loading="lazy">
+                    <div class="gallery-caption">
+                        <h4>Cultural Experiences</h4>
+                        <p>Private tours with local experts</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/3184194/pexels-photo-3184194.jpeg?w=600&h=400&fit=crop" alt="Event Planning" loading="lazy">
+                    <div class="gallery-caption">
+                        <h4>Event Planning</h4>
+                        <p>From intimate dinners to grand galas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Us</h2>
+                <p>Your trusted partner in Kenya</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg?w=400&h=500&fit=crop" alt="Le Concierge Team" loading="lazy">
+                </div>
+                
+                <div class="about-content">
+                    <h3>Who We Are</h3>
+                    <p>Le Concierge was created to simplify the relocation and luxury living experience for individuals moving to Kenya or already in Kenya. With deep local expertise and global standards of service, we act as your trusted partner every step of the way.</p>
+                    
+                    <h3>Our Mission</h3>
+                    <p>To provide high-end, reliable, and culturally attuned concierge services that help our clients thrive in their new home.</p>
+                    
+                    <h3>Our Clients</h3>
+                    <p>Diplomats. Executives. Investors. Remote Workers. Families. Anyone seeking more from their lifestyle in Kenya, South Africa, Uganda, Tanzania, etc.</p>
+                    
+                    <div class="mission-grid">
+                        <div class="mission-card">
+                            <h4>Our Promise</h4>
+                            <p>Excellence. Privacy. Access. Authenticity.</p>
+                        </div>
+                        
+                        <div class="mission-card">
+                            <h4>Our Approach</h4>
+                            <p>Personalized service with attention to every detail to ensure your complete satisfaction.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Client Experiences</h2>
+                <p>What our clients say about us</p>
+            </div>
+            
+            <div class="testimonial-container">
+                <div class="testimonial">
+                    <p class="quote">"As a diplomat moving to Nairobi, I couldn't have asked for a smoother experience. Le Concierge handled everything—from finding a home to setting up a bank account."</p>
+                    <p class="client">– Carla H., UN Official</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Reach out to our team of experts</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Nairobi, Kenya — Kileleshwa, Othaya Road</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+254 758 125010</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>Info@le-concierge.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Request a Consultation</h3>
+                    <p>Start with a $80 consultation to access our premium services</p>
+                    <form id="consultationForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Requirements</label>
+                            <textarea id="message" placeholder="Tell us about your needs" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Request Consultation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Le Concierge</h4>
+                    <p class="footer-description">Effortless Living. Expertly Delivered.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Immigration & Relocation</a></li>
+                        <li><a href="#">Real Estate Solutions</a></li>
+                        <li><a href="#">VIP Transport</a></li>
+                        <li><a href="#">Personal Concierge</a></li>
+                        <li><a href="#">Corporate Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p class="newsletter-description">Subscribe to receive updates and exclusive offers</p>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email Address" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Le Concierge. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Login to Your Account</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email Address</label>
+                    <input type="email" id="loginEmail" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                </div>
+                <div class="modal-buttons">
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                    <button type="submit" class="btn btn-primary" id="loginSubmit">Login</button>
+                </div>
+            </form>
+            <p class="modal-footer-text">
+                Don't have an account? <a href="#" id="showSignup">Sign Up</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal" id="signupModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Create Your Account</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+                    <input type="text" id="signupName" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email Address</label>
+                    <input type="email" id="signupEmail" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPhone">Phone Number</label>
+                    <input type="tel" id="signupPhone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" placeholder="Create a password" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupConfirm">Confirm Password</label>
+                    <input type="password" id="signupConfirm" placeholder="Confirm your password" required>
+                </div>
+                <button type="submit" class="btn btn-primary" id="signupSubmit">Create Account</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Consultation Modal -->
+    <div class="modal" id="consultationModal">
+        <div class="modal-content consultation-modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Book Your Consultation</h2>
+            <p>Complete payment first, then book your consultation</p>
+            
+            <form id="consultationPaymentForm">
+                <div class="form-group">
+                    <label for="consultName">Full Name</label>
+                    <input type="text" id="consultName" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="consultEmail">Email Address</label>
+                    <input type="email" id="consultEmail" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="consultPhone">Phone Number</label>
+                    <input type="tel" id="consultPhone" placeholder="Enter your phone number" required>
+                </div>
+                
+                <div class="consultation-buttons">
+                    <button type="submit" class="btn btn-primary">Book Consultation</button>
+                    <div style="margin-top: 15px; text-align: center;">
+                        <p style="margin-bottom: 10px; color: #666;">Or pay with PayPal:</p>
+                        <div id="paypal-button-container"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Dashboard -->
+    <section class="dashboard" id="dashboard">
+        <div class="dashboard-container">
+            <div class="dashboard-header">
+                <h2>Your Dashboard</h2>
+                <p>Manage your services and requests</p>
+            </div>
+            
+            <div class="dashboard-grid">
+                <div class="dashboard-sidebar">
+                    <div class="user-profile">
+                        <img src="https://images.pexels.com/photos/1472099645785/pexels-photo-1472099645785.jpeg?w=150&h=150&fit=crop&crop=face" alt="User Profile" id="userProfileImg">
+                        <h3 id="dashboardUserName">John Doe</h3>
+                        <p id="dashboardUserEmail">john@example.com</p>
+                    </div>
+                    
+                    <ul class="sidebar-links">
+                        <li><a href="#dashboard-overview" class="active">Dashboard Overview</a></li>
+                        <li><a href="#my-services">My Services</a></li>
+                        <li><a href="#service-requests">Service Requests</a></li>
+                        <li><a href="#billing">Billing & Payments</a></li>
+                        <li><a href="#account-settings">Account Settings</a></li>
+                        <li><a href="#" id="logoutBtn">Logout</a></li>
+                    </ul>
+                </div>
+                
+                <div class="dashboard-content">
+                    <div class="dashboard-section active" id="dashboard-overview">
+                        <h3>Welcome Back!</h3>
+                        <p>Here's an overview of your account and recent activities.</p>
+                        
+                        <div class="service-request">
+                            <div class="service-request-header">
+                                <h4>Relocation Consultation</h4>
+                                <span class="request-status status-pending">Pending</span>
+                            </div>
+                            <p>Requested on: <span class="request-date">June 28, 2025</span></p>
+                            <p>Service: <span class="request-service">Immigration & Relocation Support</span></p>
+                        </div>
+                        
+                        <div class="service-request">
+                            <div class="service-request-header">
+                                <h4>Property Search</h4>
+                                <span class="request-status status-completed">Completed</span>
+                            </div>
+                            <p>Requested on: <span class="request-date">June 15, 2025</span></p>
+                            <p>Service: <span class="request-service">Real Estate Solutions</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-section" id="my-services">
+                        <h3>My Services</h3>
+                        <p>Services you've subscribed to:</p>
+                        <div class="services-list">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-section" id="service-requests">
+                        <h3>Service Requests</h3>
+                        <p>Your current and past service requests:</p>
+                        <div class="requests-list">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-section" id="billing">
+                        <h3>Billing & Payments</h3>
+                        <p>Your billing history and payment methods:</p>
+                        <div class="billing-history">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-section" id="account-settings">
+                        <h3>Account Settings</h3>
+                        <p>Update your personal information and preferences.</p>
+                        <form id="accountSettingsForm">
+                            <div class="form-group">
+                                <label for="accountName">Full Name</label>
+                                <input type="text" id="accountName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="accountEmail">Email Address</label>
+                                <input type="email" id="accountEmail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="accountPhone">Phone Number</label>
+                                <input type="tel" id="accountPhone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="accountPassword">New Password</label>
+                                <input type="password" id="accountPassword">
+                            </div>
+                            <div class="form-group">
+                                <label for="accountConfirm">Confirm Password</label>
+                                <input type="password" id="accountConfirm">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Update Account</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+   <script src="script.js"></script>
+</body>
+</html>
