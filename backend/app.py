@@ -107,8 +107,8 @@ def create_paypal_order(amount, description, consultation_id):
                 'custom_id': str(consultation_id)
             }],
             'application_context': {
-                'return_url': 'http://localhost:3000/success',
-                'cancel_url': 'http://localhost:3000/cancel'
+                'return_url': 'https://la-concierge-frontend.onrender.com/success',
+                'cancel_url': 'https://la-concierge-frontend.onrender.com/cancel'
             }
         }
         
