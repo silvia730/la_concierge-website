@@ -107,8 +107,8 @@ def create_paypal_order(amount, description, consultation_id):
                 'custom_id': str(consultation_id)
             }],
             'application_context': {
-                'return_url': 'https://la-concierge-frontend.onrender.com/success',
-                'cancel_url': 'https://la-concierge-frontend.onrender.com/cancel'
+                'return_url': 'https://la-concierge-website.onrender.com//success',
+                'cancel_url': 'https://la-concierge-website.onrender.com//cancel'
             }
         }
         
